@@ -7,7 +7,7 @@ import {
 import { AiOutlineCodepenCircle as CodepenLogo } from "react-icons/ai";
 
 const baseClass = "";
-const baseIconClass = "w-full h-full";
+const baseIconClass = "w-full h-full fill-stone-300";
 
 /**
  * @param {{vendor: "github" | "codepen" | "linkedin" }} arg0

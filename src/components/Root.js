@@ -2,8 +2,8 @@ import VendorLinkBar from "./VendorLinkBar";
 
 function Root() {
   return (
-    <div id="site-container">
-      <h1>JEREMYELLIOTT.ME</h1>
+    <div className="text-stone-600" id="site-container">
+      <h1 className="text-xl underline">JEREMYELLIOTT.ME</h1>
       <p>
         Hi! I'm Jeremy, a web developer / designer based in Canmore, Alberta
       </p>
