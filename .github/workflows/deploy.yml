@@ -1,8 +1,8 @@
-name: Deploy to Pages
+name: CI
 on: push
 
 jobs:
-  list-files:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,7 +20,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to Pages
+      - name: Deploy to Host
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
