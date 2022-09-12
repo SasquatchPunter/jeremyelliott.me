@@ -1,0 +1,19 @@
+{
+  "name": "jeremyelliott.me",
+  "version": "1.0.0",
+  "description": "Personal professional site with contact forms and work examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SasquatchPunter/jeremyelliott.me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SasquatchPunter/jeremyelliott.me/issues"
+  },
+  "homepage": "https://github.com/SasquatchPunter/jeremyelliott.me#readme"
+}
