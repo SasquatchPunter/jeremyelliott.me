@@ -1,3 +1,5 @@
+import VendorLinkBar from "./VendorLinkBar";
+
 function Root() {
   return (
     <div id="site-container">
@@ -9,6 +11,8 @@ function Root() {
         Obviously there's not a lot to see just yet, but check back often while
         I build out the site!
       </p>
+
+      <VendorLinkBar />
     </div>
   );
 }
