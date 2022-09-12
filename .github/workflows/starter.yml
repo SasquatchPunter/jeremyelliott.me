@@ -4,4 +4,8 @@ jobs:
   Hello:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello"
+      - name: Print Hello
+        run: echo "hello"
+
+      - name: Print GH Token
+        run: echo ${{secrets.GITHUB_TOKEN}}
