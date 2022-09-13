@@ -3,5 +3,10 @@
     "github": "https://github.com/SasquatchPunter",
     "codepen": "https://codepen.io/SasquatchPunter",
     "linkedin": "https://www.linkedin.com/in/jeremy-elliott-704858249/"
+  },
+  "form_submit": {
+    "url": "https://formsubmit.co/7c38788fabbc8a5c7b91be1cf6a225eb",
+    "captcha_required": true,
+    "subject": "Contact Submission"
   }
 }

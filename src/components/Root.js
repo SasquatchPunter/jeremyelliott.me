@@ -1,4 +1,5 @@
 import VendorLinkBar from "./VendorLinkBar";
+import ContactForm from "./ContactForm";
 
 function Root() {
   return (
@@ -12,6 +13,7 @@ function Root() {
         I build out the site!
       </p>
 
+      <ContactForm.Dropdown className="absolute top-0 right-0 rounded-bl-xl" />
       <VendorLinkBar />
     </div>
   );
