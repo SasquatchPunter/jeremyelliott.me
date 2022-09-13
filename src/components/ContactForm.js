@@ -11,7 +11,7 @@ function Form({ className }) {
     <div className="flex flex-col justify-center">
       <h4 className="text-center">Reach out to me!</h4>
       <form
-        className="flex flex-col gap-2 justify-center"
+        className="flex flex-col gap-4 justify-center"
         action={data.form_submit.url}
         method="POST"
       >
@@ -69,4 +69,6 @@ function Dropdown({ className }) {
   );
 }
 
-export default { Form, Dropdown };
+const ContactForm = { Form, Dropdown };
+
+export default ContactForm;
