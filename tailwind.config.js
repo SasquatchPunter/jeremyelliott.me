@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    screens: {
+      phone: "420px",
+    },
     extend: {
       colors: {
         vendor: {

@@ -1,14 +1,17 @@
 import data from "../data.json";
 import { useState } from "react";
+import { HiOutlineMail } from "react-icons/hi";
 
 /**
  *  Basic form for email contacts
  * @param {{className: string}} param0
  */
 function Form({ className }) {
+  const baseClass = "flex flex-col justify-center";
   const fieldsClass = "px-2 text-stone-600";
+
   return (
-    <div className="flex flex-col justify-center">
+    <div className={[baseClass, className].join(" ")}>
       <h4 className="text-center">Reach out to me!</h4>
       <form
         className="flex flex-col gap-4 justify-center"
@@ -56,13 +59,13 @@ function Form({ className }) {
  * @param {{className: string}} param0
  */
 function Dropdown({ className }) {
-  const [open, setOpen] = useState(false);
   const baseClass = "bg-stone-600 text-stone-200 p-2 flex flex-col";
+  const [open, setOpen] = useState(false);
 
   return (
     <div className={[baseClass, className].join(" ")}>
-      <button className="text-right" onClick={() => setOpen(!open)}>
-        X
+      <button className="w-8 h-8 self-end" onClick={() => setOpen(!open)}>
+        <HiOutlineMail className="w-full h-full" />
       </button>
       {open && <Form />}
     </div>
