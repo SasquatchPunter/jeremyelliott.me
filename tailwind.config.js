@@ -6,6 +6,9 @@ module.exports = {
       phone: "420px",
     },
     extend: {
+      backgroundImage: {
+        "main-pattern": "url('/public/bg-vector.png')",
+      },
       colors: {
         vendor: {
           github: "#171515",
