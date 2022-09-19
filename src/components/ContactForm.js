@@ -2,11 +2,13 @@ import data from "../data.json";
 import { useState } from "react";
 import { HiOutlineMail } from "react-icons/hi";
 
+const ContactForm = {};
+
 /**
  *  Basic form for email contacts
  * @param {{className: string}} param0
  */
-function Form({ className }) {
+ContactForm.Form = function ({ className }) {
   const baseClass = "flex flex-col justify-center";
   const fieldsClass = "px-2 text-stone-600";
 
@@ -52,13 +54,13 @@ function Form({ className }) {
       </form>
     </div>
   );
-}
+};
 
 /**
  *  Closeable dropdown component that displays the basic form
  * @param {{className: string}} param0
  */
-function Dropdown({ className }) {
+ContactForm.Dropdown = function ({ className }) {
   const baseClass = "bg-stone-600 text-stone-200 p-2 flex flex-col";
   const [open, setOpen] = useState(false);
 
@@ -70,8 +72,6 @@ function Dropdown({ className }) {
       {open && <Form />}
     </div>
   );
-}
-
-const ContactForm = { Form, Dropdown };
+};
 
 export default ContactForm;
